@@ -1,14 +1,13 @@
-package com.kuraki;
+package com.kuraki.threadPool;
 
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.RejectedExecutionHandler;
-import java.util.concurrent.ThreadFactory;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 /**
  *
  */
 public class ThreadPoolExecutor {
+
+    private static final RejectedExecutionHandler defaultHandler = null;
 
     /**
      * @param corePoolSize    核心线程数，也可以说是最小线程数
@@ -26,6 +25,5 @@ public class ThreadPoolExecutor {
                               BlockingQueue<Runnable> workQueue,
                               ThreadFactory threadFactory,
                               RejectedExecutionHandler handler) {
-
     }
 }
